@@ -1,0 +1,119 @@
+{
+ "ruleset_index": {
+  "_links": {
+   "self": {
+    "href": "https://eu.api.blizzard.com/data/wow/ruleset/?namespace=dynamic-forever-eu"
+   }
+  },
+  "rulesets": [
+   {
+    "key": {
+     "href": "https://eu.api.blizzard.com/data/wow/ruleset/1?namespace=dynamic-forever-eu"
+    },
+    "id": 1
+   },
+   {
+    "key": {
+     "href": "https://eu.api.blizzard.com/data/wow/ruleset/15?namespace=dynamic-forever-eu"
+    },
+    "id": 15
+   },
+   "... 4 Eintraege"
+  ]
+ },
+ "haus_index": {
+  "_links": {
+   "self": {
+    "href": "https://eu.api.blizzard.com/data/wow/ruleset/1/auctions/?namespace=dynamic-forever-eu"
+   }
+  },
+  "auctions": [
+   {
+    "key": {
+     "href": "https://eu.api.blizzard.com/data/wow/ruleset/1/auctions/110?namespace=dynamic-forever-eu"
+    },
+    "name": "Auktionshaus der Allianz",
+    "id": 110
+   },
+   {
+    "key": {
+     "href": "https://eu.api.blizzard.com/data/wow/ruleset/1/auctions/111?namespace=dynamic-forever-eu"
+    },
+    "name": "Auktionshaus der Allianz",
+    "id": 111
+   },
+   "... 15 Eintraege"
+  ]
+ },
+ "haus": {
+  "_links": {
+   "self": {
+    "href": "https://eu.api.blizzard.com/data/wow/ruleset/1/auctions/110?namespace=dynamic-forever-eu"
+   }
+  },
+  "auctions": [
+   {
+    "id": 34509307,
+    "item": {
+     "id": 287001,
+     "context": 1,
+     "modifiers": [
+      {
+       "type": 28,
+       "value": 4522
+      }
+     ]
+    },
+    "buyout": 47900,
+    "quantity": 1,
+    "time_left": "SHORT"
+   },
+   {
+    "id": 36194739,
+    "item": {
+     "id": 5961
+    },
+    "buyout": 1100,
+    "quantity": 1,
+    "time_left": "LONG"
+   },
+   "... 131872 Eintraege"
+  ],
+  "id": 110,
+  "name": "Auktionshaus der Allianz",
+  "commodities": {
+   "href": "https://eu.api.blizzard.com/data/wow/ruleset/1/auctions/110/commodities?namespace=dynamic-forever-eu"
+  },
+  "ruleset": {
+   "href": "https://eu.api.blizzard.com/data/wow/ruleset/1?namespace=dynamic-forever-eu"
+  }
+ },
+ "waren": {
+  "_links": {
+   "self": {
+    "href": "https://eu.api.blizzard.com/data/wow/ruleset/1/auctions/110/commodities?namespace=dynamic-forever-eu"
+   }
+  },
+  "auctions": [
+   {
+    "id": 34968143,
+    "item": {
+     "id": 2589
+    },
+    "quantity": 20,
+    "unit_price": 28,
+    "time_left": "VERY_LONG"
+   },
+   {
+    "id": 35896612,
+    "item": {
+     "id": 2581
+    },
+    "quantity": 5,
+    "unit_price": 20,
+    "time_left": "LONG"
+   },
+   "... 81884 Eintraege"
+  ]
+ }
+}
