@@ -1,0 +1,59 @@
+name: Auktionsdaten sammeln
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # jede Stunde, 7 Minuten nach der vollen Stunde
+  workflow_dispatch:        # erlaubt den Knopf "Run workflow"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sammeln
+  cancel-in-progress: false
+
+jobs:
+  sammeln:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      # Gedaechtnis des letzten Laufs holen (welche Auktionen es vor einer Stunde gab)
+      - name: Letzten Stand holen
+        uses: actions/cache/restore@v4
+        with:
+          path: .zustand
+          key: zustand-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: zustand-
+
+      - name: Daten holen
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+        run: python3 sammler.py
+
+      - name: Daten speichern
+        run: |
+          git config user.name "Goldberater-Sammler"
+          git config user.email "sammler@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Nichts Neues."
+            exit 0
+          fi
+          git commit -m "Daten $(date -u +'%Y-%m-%d %H:%M') UTC"
+          # Falls sich das Projekt inzwischen geaendert hat: neu aufsetzen und erneut versuchen
+          for versuch in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase
+          done
+          echo "FEHLER: Die Daten liessen sich nicht ins Projekt schreiben."
+          exit 1
+
+      - name: Neuen Stand merken
+        if: ${{ hashFiles('.zustand/**') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: .zustand
+          key: zustand-${{ github.run_id }}-${{ github.run_attempt }}
