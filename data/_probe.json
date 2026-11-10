@@ -73,7 +73,7 @@
     "quantity": 1,
     "time_left": "LONG"
    },
-   "... 90003 Eintraege"
+   "... 94864 Eintraege"
   ],
   "id": 110,
   "name": "Auktionshaus der Allianz",
@@ -92,24 +92,24 @@
   },
   "auctions": [
    {
-    "id": 30914354,
-    "item": {
-     "id": 252453
-    },
-    "quantity": 5,
-    "unit_price": 4089,
-    "time_left": "MEDIUM"
-   },
-   {
     "id": 31098429,
     "item": {
      "id": 6361
     },
     "quantity": 228,
     "unit_price": 10,
-    "time_left": "MEDIUM"
+    "time_left": "SHORT"
    },
-   "... 60867 Eintraege"
+   {
+    "id": 34079048,
+    "item": {
+     "id": 2581
+    },
+    "quantity": 1,
+    "unit_price": 20,
+    "time_left": "LONG"
+   },
+   "... 66994 Eintraege"
   ]
  }
 }
