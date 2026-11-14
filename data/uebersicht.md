@@ -1,14 +1,14 @@
 # Auktionshaeuser EU
 
-Stand: 14.11.2026 16:33 UTC
+Stand: 14.11.2026 21:19 UTC
 
 Tiefstpreise pro Stueck. Vergleiche sie im Spiel mit deinem Auktionshaus.
 
 | Haus-Nr. | Name | Auktionen | Items | Leinenstoff | Wollstoff | Kupfererz | Leichtes Leder |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 110 | Auktionshaus der Allianz | 260827 | 6435 | 25k | 1s 18k | 1s 20k | 50k |
-| 111 | Auktionshaus der Allianz | 270354 | 6361 | 19k | 80k | 92k | 23k |
-| 113 | Auktionshaus der Horde | 293436 | 6355 | 22k | 99k | 1s 80k | 54k |
-| 114 | Auktionshaus der Horde | 255252 | 6116 | 20k | 63k | 1s 39k | 26k |
-| 116 | Auktionshaus der Schwarzmeerräuber | 36623 | 3285 | 21k | 1s 10k | 1s 80k | 78k |
-| 117 | Auktionshaus der Schwarzmeerräuber | 35822 | 3228 | 23k | 1s 8k | 1s 18k | 43k |
+| 110 | Auktionshaus der Allianz | 278476 | 6518 | 21k | 1s 17k | 1s 23k | 54k |
+| 111 | Auktionshaus der Allianz | 295732 | 6476 | 18k | 33k | 86k | 19k |
+| 113 | Auktionshaus der Horde | 317329 | 6463 | 18k | 1s 29k | 1s 90k | 40k |
+| 114 | Auktionshaus der Horde | 279589 | 6272 | 15k | 1s 15k | 58k | 15k |
+| 116 | Auktionshaus der Schwarzmeerräuber | 43502 | 3452 | 70k | 99k | 1s 74k | 70k |
+| 117 | Auktionshaus der Schwarzmeerräuber | 42487 | 3382 | 19k | 1s 10k | 1s 12k | 1s |
