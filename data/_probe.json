@@ -59,25 +59,18 @@
     },
     "buyout": 165,
     "quantity": 1,
-    "time_left": "LONG"
+    "time_left": "MEDIUM"
    },
    {
-    "id": 139386664,
+    "id": 144141727,
     "item": {
-     "id": 14169,
-     "context": 1,
-     "modifiers": [
-      {
-       "type": 28,
-       "value": 5254
-      }
-     ]
+     "id": 250589
     },
-    "buyout": 799,
+    "buyout": 48000,
     "quantity": 1,
-    "time_left": "LONG"
+    "time_left": "MEDIUM"
    },
-   "... 109794 Eintraege"
+   "... 171655 Eintraege"
   ],
   "id": 110,
   "name": "Auktionshaus der Allianz",
@@ -96,15 +89,6 @@
   },
   "auctions": [
    {
-    "id": 144131551,
-    "item": {
-     "id": 4425
-    },
-    "quantity": 1,
-    "unit_price": 999,
-    "time_left": "LONG"
-   },
-   {
     "id": 145671111,
     "item": {
      "id": 2581
@@ -113,7 +97,16 @@
     "unit_price": 20,
     "time_left": "LONG"
    },
-   "... 104316 Eintraege"
+   {
+    "id": 142516544,
+    "item": {
+     "id": 249409
+    },
+    "quantity": 2,
+    "unit_price": 7300,
+    "time_left": "SHORT"
+   },
+   "... 153012 Eintraege"
   ]
  }
 }
